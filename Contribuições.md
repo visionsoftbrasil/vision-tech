@@ -17,6 +17,6 @@ Obrigado por considerar contribuir para a página web da Vision Tech Software! E
 
 ### Licença
 
-Ao contribuir para este projeto, você concorda que suas contribuições serão licenciadas sob a mesma licença do projeto (inserir licença aqui, por exemplo, MIT License).
+Ao contribuir para este projeto, você concorda que suas contribuições serão licenciadas sob a mesma licença do projeto, MIT License.
 
 Obrigado por ajudar a melhorar a página web da Vision Tech Software! Suas contribuições são valiosas para nós.
