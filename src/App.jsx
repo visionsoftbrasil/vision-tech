@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
-import NavBar from './components/NavBar'
+import Header from './components/Header'
 import Footer from './components/Footer'
 
 function App() {
   return (
     <Router>
-      <NavBar />
+      <Header />
       <main>
         <Routes>
             <Route exact path='/' element={<Home />}/>

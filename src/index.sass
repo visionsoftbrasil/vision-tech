@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap')
+
+$pink: #e81ac4
+$pink-two: #cc1bf2
+$purple:  #8822db
+$black-purple: #3e1e96
+$blue: #232380
+$white-blue: #5151da
+  
 *
   margin: 0
   padding: 0
@@ -6,19 +15,51 @@
   height: 100vh
   display: grid
   grid-template-areas: "header" "main" "footer"
-  grid-template-rows: 60px 1fr 200px 
+  grid-template-rows: 60px 1fr 200px
+  
 
-header
+.header
   grid-area: header
-  background: gray 
+  background-color: $black-purple
+  padding: 15px 0
+  font-family: 'Open Sans', sans-serif
+  font-weight: bold
+
+  .container 
+    display: flex
+    justify-content: space-between
+    align-items: center
+  
+
+  .logo 
+    font-size: 24px
+    font-weight: bold
+    text-decoration: none
+    color: #fff
+  
+
+  .menu 
+    list-style: none
+    padding: 0
+    display: flex
+
+    li 
+      margin-right: 20px
+
+      a 
+        text-decoration: none
+        color: #fff
+        transition: color 0.3s
+
+        &:hover 
+          color: $white-blue
 
 main
   grid-area: main
-  background: red
+  background: linear-gradient($purple, white)
 
 footer
   grid-area: footer
-  background: blue
 
 
 /* background-color: #242424; */
