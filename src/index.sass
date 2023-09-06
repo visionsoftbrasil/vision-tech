@@ -2,5 +2,23 @@
   margin: 0
   padding: 0
 
+#root
+  height: 100vh
+  display: grid
+  grid-template-areas: "header" "main" "footer"
+  grid-template-rows: 60px 1fr 200px 
+
+header
+  grid-area: header
+  background: gray 
+
+main
+  grid-area: main
+  background: red
+
+footer
+  grid-area: footer
+  background: blue
+
 
 /* background-color: #242424; */
