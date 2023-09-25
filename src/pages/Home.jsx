@@ -1,29 +1,20 @@
-import git from '../assets/svgs/icons/github.svg'
-import insta from '../assets/svgs/icons/instagram.svg'
-
+import logo from "../assets/images/logo/central-white-nobg.png"
 
 export default function Home() {
 
     return (
         
-        <section className="coming-soon">
-            <h1 className="coming">
-                Em breve...
-            </h1>
-            <h2>
-                Verifique nossas redes sociais!
-            </h2>
-            <div className="menu">
-                <a href='https://github.com/visionsoftbrasil' target='_blank'>
-                    <div className="opt">
-                        <img src={git} alt="" />
-                    </div>
-                </a>
-                <a href="https://www.instagram.com/vision.tech.br/" target='_blank'>
-                    <div className="opt">
-                        <img src={insta} alt="" />
-                    </div>
-                </a>
+        <section className="sec-container">
+            <div className="div-logo">
+                <img src={logo} alt="logo-image" title="Vision Tech Software!" />
+            </div>
+            <div className="container-name">
+                <div className="div-home-name">
+                    <h1> Vision Tech </h1>
+                    <h1> Software </h1>                </div>
+                <p>
+                    Inovação. Solução. Paixão.
+                </p>
             </div>
         </section>
         

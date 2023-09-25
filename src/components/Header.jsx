@@ -6,9 +6,6 @@ export default function Header() {
     return (
         <header className="header">
             <div className="container">
-                <Link to="/" className="logo">
-                    <img src={logo} alt="Logo Vision Software" title="Ir para página inicial"/>
-                </Link>
                 <nav>
                     <ul className="menu">
                         <li title="Ir para página inicial">

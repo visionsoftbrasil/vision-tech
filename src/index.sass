@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap')
 
+$home-bg: url("assets/images/bg/home-bg.jpg")  
 $pink: #e81ac4
 $pink-two: #cc1bf2
 $purple:  #8822db
@@ -18,40 +19,32 @@ $white-blue: #5151da
   height: 100vh
   display: grid
   grid-template-areas: "header" "main" "footer"
-  grid-template-rows: 60px 1fr 200px
+  grid-template-rows: 15% 1fr auto
   font-family: 'Open Sans', sans-serif
+  background: $home-bg no-repeat center
+  background-size: cover 
   
 
 .header
   grid-area: header
-  background-color: $black-purple
+  background-color: transparent
   font-weight: bold
 
   .container 
     height: 100%
-    display: flex
-    align-items: center
-    justify-content: space-between
-  
+    
+    nav
+      display: flex
+      justify-content: end
 
-  .logo
-    max-width: 125px
-    display: flex
-    align-items: center
+      .menu 
+        list-style: none
+        padding: 0
+        display: flex
 
-    img
-      justify-self: center
-      width: 100%
-  
-
-  .menu 
-    list-style: none
-    padding: 0
-    display: flex
-
-    li 
-      margin-right: 20px
-      margin-top: 20px
+      li 
+        margin-right: 20px
+        margin-top: 20px
 
       a 
         text-decoration: none
@@ -63,44 +56,22 @@ $white-blue: #5151da
 
 main
   grid-area: main
-  background: $black-purple_01
+  background: transparent
 
-  .coming-soon
+  .sec-container
     display: flex
     flex-direction: column
-    justify-content: space-around
-    align-items: center
 
-    h2
-      color: white
-      text-align: center
+    .div-logo
+      width: 40%
 
-    .coming
-      text-align: center
-      font-weight: bolder
-      font-size: 5rem
-      color: white
-
-    .menu
-      margin: 20px
-      width: 20%
-      justify-content: space-evenly
-      display: flex
-
-      div
-        width: 30px
-        
-        &:hover
-          cursor: pointer
-
-        img
-          width: 100%
-          fill: white
+      img
+        width: 100%
           
 
 footer
   grid-area: footer
-  background: $black-purple url("./central-white-nobg.png") center/40% no-repeat
+  background: #141414 url("assets/images/logo/central-white-nobg-op.png") center/40% no-repeat
   @media screen and (max-width: 600px)
     background: $black-purple url("./central-white-nobg.png") center/100% no-repeat
 
