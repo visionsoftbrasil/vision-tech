@@ -6,12 +6,14 @@ import Footer from './components/Footer'
 function App() {
   return (
     <Router>
-      <Header />
-      <main>
-        <Routes>
-            <Route exact path='/' element={<Home />}/>
-        </Routes>
-      </main>
+      <div className="background">
+        <Header />
+        <main>
+          <Routes>
+              <Route exact path='/' element={<Home />}/>
+          </Routes>
+        </main>
+      </div>
       <Footer />
     </Router>
   )

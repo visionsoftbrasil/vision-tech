@@ -21,6 +21,7 @@ export default function Header() {
                             <Link to="/contact">Contato</Link>
                         </li>
                     </ul>
+                    <div className="line"></div>
                 </nav>
             </div>
         </header>

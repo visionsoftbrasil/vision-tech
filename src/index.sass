@@ -10,41 +10,61 @@ $black-purple_01: #4a24b4
 $black-purple: #3e1e96
 $blue: #232380
 $white-blue: #5151da
+$white-gray: #eeeeee
   
 *
   margin: 0
   padding: 0
+  box-sizing: border-box
 
 #root
   height: 100vh
   display: grid
-  grid-template-areas: "header" "main" "footer"
-  grid-template-rows: 15% 1fr auto
-  font-family: 'Open Sans', sans-serif
+  grid-template-areas: "h-m" "f"
+  font-family: Inter, sans-serif
+  background: #242424
+
+.background
+  display: grid
+  grid-template-areas: "header" "main"
+  grid-template-rows: 60px 1fr
+  grid-area: h-m
   background: $home-bg no-repeat center
   background-size: cover 
+
+@keyframes widthing
+  from 
+    width: 0%
+
+  to
+    width: 100%
   
 
 .header
   grid-area: header
   background-color: transparent
-  font-weight: bold
+  font-size: 28px
 
   .container 
     height: 100%
+    display: flex
+    flex-direction: column
+    align-items: end
     
     nav
-      display: flex
-      justify-content: end
+      margin: 0 3rem
 
-      .menu 
+      .line
+        height: 3px
+        background: $purple
+        animation: widthing .5s linear 1
+
+      .menu
         list-style: none
-        padding: 0
         display: flex
 
       li 
-        margin-right: 20px
-        margin-top: 20px
+        margin: 1rem 1rem 0 1rem
 
       a 
         text-decoration: none
@@ -56,6 +76,7 @@ $white-blue: #5151da
 
 main
   grid-area: main
+  height: calc(100vh - 60px)
   background: transparent
 
   .sec-container
@@ -63,17 +84,40 @@ main
     flex-direction: column
 
     .div-logo
-      width: 40%
+      width: 30%
 
       img
         width: 100%
+
+    .container-name
+      margin: 5rem
+
+      .div-home-name
+        display: flex
+        flex-direction: column
+        span
+          font-size: 4rem
+
+          &:nth-of-type(1)
+            font-weight: normal
+            color: $white-gray
+
+          &:nth-of-type(2)
+            font-weight: bolder
+            color: $purple
+      p
+        margin: 1rem 0
+        font-size: 1.5rem
+        font-weight: bolder
+        color: #eeeeee98
           
 
 footer
-  grid-area: footer
+  height: 250px
+  grid-area: f
   background: #141414 url("assets/images/logo/central-white-nobg-op.png") center/40% no-repeat
   @media screen and (max-width: 600px)
-    background: $black-purple url("./central-white-nobg.png") center/100% no-repeat
+    background: $black-purple url("./assets/images/logo/central-white-nobg-op.png") center/100% no-repeat
 
   .image
     color: white
