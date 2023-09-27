@@ -4,7 +4,7 @@ import insta from '../assets/svgs/icons/instagram.svg'
 export default function Footer() {
 
     return (
-        <footer className="footer">
+        <footer id="contato" className="footer">
             <div className="image">
                 <div className="company-name">Vision Tech Software</div>
                 <div className="contact-info">Telefone: (11) 1234-5678</div>

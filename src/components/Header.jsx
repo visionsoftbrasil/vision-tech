@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import logo from "../assets/images/logo/central-white-nobg.png"
 
 export default function Header() {
 
@@ -12,13 +11,13 @@ export default function Header() {
                             <Link to="/">Página Inicial</Link>
                         </li>
                         <li title="Ir para página sobre">
-                            <Link to="/about">Sobre</Link>
+                            <a href="#sobre">Sobre Nós</a>
                         </li>
                         <li title="Ir para página de serviços">
                             <Link to="/services">Serviços</Link>
                         </li>
                         <li title="Ir para página de contato">
-                            <Link to="/contact">Contato</Link>
+                            <a href="#contato">Contato</a>
                         </li>
                     </ul>
                     <div className="line"></div>

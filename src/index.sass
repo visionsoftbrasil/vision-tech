@@ -16,6 +16,7 @@ $white-gray: #eeeeee
   margin: 0
   padding: 0
   box-sizing: border-box
+  scroll-behavior: smooth
 
 #root
   height: 100vh
@@ -76,40 +77,75 @@ $white-gray: #eeeeee
 
 main
   grid-area: main
-  height: calc(100vh - 60px)
   background: transparent
 
   .sec-container
+    height: calc(100vh)
     display: flex
     flex-direction: column
 
-    .div-logo
-      width: 30%
+    &:nth-of-type(1)
+      height: calc(100vh - 60px)
 
-      img
-        width: 100%
+      .div-logo
+        width: 30%
 
-    .container-name
-      margin: 5rem
+        img
+          width: 100%
 
-      .div-home-name
+      .container-name
+        margin: 5rem
+
+        .div-home-name
+          display: flex
+          flex-direction: column
+          span
+            font-size: 4rem
+
+            &:nth-of-type(1)
+              font-weight: normal
+              color: $white-gray
+
+            &:nth-of-type(2)
+              font-weight: bolder
+              color: $purple
+        p
+          margin: 1rem 0
+          font-size: 1.5rem
+          font-weight: bolder
+          color: #eeeeee98
+    
+    &:nth-of-type(2)
+      background: $purple url(assets/images/bg/code.png) left 10% bottom 2rem no-repeat
+      background-size: 60%
+
+      .sobre
+        h1
+          text-align: right
+          font-size: 400%
+          color: $white-gray
+          margin: 4rem 4rem 3rem
+
+      .container-2
         display: flex
-        flex-direction: column
-        span
-          font-size: 4rem
+        width: 90%
+        margin: 0 auto
+        gap: 6%
 
-          &:nth-of-type(1)
-            font-weight: normal
-            color: $white-gray
+        .about-radius
+          border-radius: 1rem
+          width: 60%
+          height: 400px
+          background: #eeeeee8f
+          backdrop-filter: blur(5px)
 
-          &:nth-of-type(2)
-            font-weight: bolder
-            color: $purple
-      p
-        margin: 1rem 0
-        font-size: 1.5rem
-        font-weight: bolder
-        color: #eeeeee98
+        .img-shadow
+          width: 300px
+          height: 300px
+          align-self: center
+          background: $black-purple
+          box-shadow: 25px 25px 0px 8px $black-purple_01
+          
           
 
 footer
