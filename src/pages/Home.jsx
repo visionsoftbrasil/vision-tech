@@ -4,7 +4,7 @@ export default function Home() {
 
     return (
         <>
-            <section className="sec-container">
+            <section id='pg-inicial' className="sec-container">
                 <div className="div-logo">
                     <img src={logo} alt="logo-image" title="Vision Tech Software!" />
                 </div>
