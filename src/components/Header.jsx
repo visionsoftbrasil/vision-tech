@@ -45,7 +45,10 @@ export default function Header() {
                         : ''
                     }
                 </nav>
-                <img src={menu} onClick={() => setActive(!active)} className="icon-sand" />
+                <div onClick={() => setActive(!active)} class={active ? "icon-sand menu btn1 open" : "icon-sand menu btn1"} data-menu="1">
+                    <div class="icon-left"></div>
+                    <div class="icon-right"></div>
+                </div>
             </div>
         </header>
     )
