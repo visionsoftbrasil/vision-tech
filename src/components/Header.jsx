@@ -1,5 +1,4 @@
 import { useState } from "react"
-import menu from '../assets/svgs/icons/menu.svg'
 
 export default function Header() {
     const [active, setActive] = useState(false)
