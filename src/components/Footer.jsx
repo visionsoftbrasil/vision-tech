@@ -9,10 +9,10 @@ export default function Footer() {
                 <div className="company-name">Vision Tech Software</div>
                 <div className="contact-info">Telefone: (11) 1234-5678</div>
                 <div className="social-media">
-                    <a href="https://www.instagram.com/visiontechsoftware" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/vision.tech.br" target="_blank" rel="noopener noreferrer">
                         <img src={insta} />
                     </a>
-                    <a href="https://github.com/visionsotwarebrasil" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/visionsoftbrasil" target="_blank" rel="noopener noreferrer">
                     <img src={git} />
                     </a>
                 </div>
