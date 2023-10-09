@@ -21,7 +21,7 @@ export default function Home() {
             <section id="sobre" className="sec-container">
                 <div className="container">
                     <div className="sobre">
-                        <h1> &lt; Sobre Nós &gt;</h1>
+                        <h1> &lt;Sobre Nós&gt;</h1>
                     </div>
                     <div className="container-2">
                         <div className="about-radius">
