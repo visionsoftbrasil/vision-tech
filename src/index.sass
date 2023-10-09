@@ -19,7 +19,6 @@ $light: #efefef
 $color: #b3e5fc
 
 @mixin btn()
-  margin: 1rem
   position: relative
   width: 60px
   height: 60px
@@ -140,15 +139,18 @@ $color: #b3e5fc
   width: 100vw
 
   .sand
+    height: 100%
+    width: 100%
     display: none
     @media screen and ( max-width: 730px )
-      display: flex
-      height: 100%
-      width: 100%
-      justify-content: flex-end
+      display: grid
+      padding: 1rem 0 
+      grid-template-columns: 75% 15%
+      gap: 1rem
+      justify-content: center
 
       nav
-
+        width: 100%
         .menu
           border-radius: 1rem 2rem
           background: #ffffff3a
@@ -157,7 +159,6 @@ $color: #b3e5fc
           height: 0
           list-style: none
           transition: .5s ease
-          margin: 1rem 0 
 
           div
             height: 100%
