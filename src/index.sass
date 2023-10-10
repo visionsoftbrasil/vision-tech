@@ -273,6 +273,7 @@ main
     &:nth-of-type(2)
       background: $purple url(assets/images/bg/code.png) left 10% bottom 2rem no-repeat
       background-size: 60%
+      padding: 1rem 0
 
       .container
         display: flex
@@ -281,12 +282,17 @@ main
 
       .sobre
         h1
+          @media screen and (max-width: 480px)
+            text-align: center
+            font-size: 300%
+            margin: 5rem 0rem 0 2rem
           text-align: right
           font-size: 400%
           color: $white-gray
           margin: 4rem 4rem 3rem
 
       .container-2
+        padding: 1rem
         display: flex
         width: 90%
         align-self: center
@@ -294,6 +300,10 @@ main
         gap: 6%
         height: 100%
         justify-content: space-around
+        @media screen and (max-width: 480px) 
+          min-width: 400px
+          min-height: 225px
+          flex-direction: column
 
         .about-radius
           border-radius: 1rem
@@ -301,6 +311,8 @@ main
           height: 100%
           background: #eeeeee8f
           backdrop-filter: blur(5px)
+          @media screen and (max-width: 480px) 
+            width: 100%
 
         .img-shadow
           width: 300px
