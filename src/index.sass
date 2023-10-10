@@ -125,10 +125,10 @@ $color: #b3e5fc
 
 @keyframes widthing
   from 
-    width: 0%
+    transform: scaleX(0)
 
   to
-    width: 100%
+    transform: scaleX(1)
 
 
 .header
@@ -186,8 +186,12 @@ $color: #b3e5fc
 
     nav
       margin: 0 3rem
+      display: flex
+      flex-direction: column
 
       .line
+        
+        transform-origin: right
         height: 3px
         background: $purple
         animation: widthing .5s linear 1
