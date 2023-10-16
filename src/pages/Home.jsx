@@ -1,4 +1,5 @@
 import logo from "../assets/images/logo/central-white-nobg-minimal.png"
+import { Carousel } from "react-responsive-carousel"
 
 export default function Home() {
 
@@ -28,7 +29,26 @@ export default function Home() {
 
                         </div>
                         <div className="img-shadow">
-
+                            <Carousel className="carousel">
+                                <div className="container-carousel">
+                                    <p>teste 1</p>
+                                </div>
+                                <div className="container-carousel">
+                                    <p>teste 2</p>
+                                </div>
+                                <div className="container-carousel">
+                                    <p>teste 3</p>
+                                </div>
+                                <div className="container-carousel">
+                                    <p>teste 1</p>
+                                </div>
+                                <div className="container-carousel">
+                                    <p>teste 2</p>
+                                </div>
+                                <div className="container-carousel">
+                                    <p>teste 3</p>
+                                </div>
+                            </Carousel>
                         </div>
                     </div>
                 </div>
