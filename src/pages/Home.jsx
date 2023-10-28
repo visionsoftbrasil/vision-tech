@@ -29,7 +29,7 @@ export default function Home() {
                     <div className="container-2">
                         <Carousel showThumbs={false} className="carousel">
                             {imageDesc?.map((card, index) => (
-                                <Cardrousel key={index} card={imageDesc.indexOf(card)} />
+                                <Cardrousel key={index} card={index} />
                             ))}
                         </Carousel>
                     </div>

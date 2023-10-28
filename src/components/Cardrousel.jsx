@@ -1,5 +1,5 @@
 import { imageDesc } from "../util/utils"
-import image from '../assets/images/carousel/geo.jpg'
+import { Carousel } from "react-responsive-carousel"
 
 export default function Cardrousel({card}){
 
@@ -21,7 +21,13 @@ export default function Cardrousel({card}){
                     </div>
                 </div>
                 <div className="img-shadow">
-                    <img src={imageDesc[card].img} alt="Imagem" />
+                    {
+                        card < imageDesc.length && <img src={imageDesc[card].img} alt="Imagem" />
+                    }
+                    {
+                        
+                    }
+                    
                 </div>
             </div>
         </>
