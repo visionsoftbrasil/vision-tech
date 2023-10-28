@@ -1,0 +1,8 @@
+export const imageDesc = [
+    {img: "src/assets/images/carousel/geo.jpg", desc: ['Olá!,','Meu nome é Geovane (vulgo <strong>Geodain</strong>), sou produtor UX/UI da empresa Vision Soft Brasil!']},
+    {img: "src/assets/images/carousel/helo.jpg", desc: ['Olá!,','Meu nome é Heloisa (vulgo <strong>Helo</strong>), sou Gerente de Vendas na Vision Soft Brasil!']},
+    {img: "src/assets/images/carousel/lu.jpg", desc: ['Olá!,','Meu nome é Lucas (vulgo <strong>Risalto</strong>), sou Diretor de Marketing na Vision Soft Brasil!']},
+    {img: "src/assets/images/carousel/jao.jpg", desc: ['Olá!,','Meu nome é João (vulgo <strong>Jão</strong>), sou Diretor Administrativo na Vision Soft Brasil!']},
+    {img: "src/assets/images/carousel/molari.jpg", desc: ['Olá!,','Meu nome é Guilherme (vulgo <strong>Molari</strong>), sou gerente de produção e dev Sênior na empresa Vision Soft Brasil!']},
+    {img: "src/assets/images/carousel/us.jpg", desc: ['<strong>Juntos formamos a Vision Soft Brasil!</strong>', `A Vision Soft Brasil, fundada em <strong>2023</strong>, é especializada no desenvolvimento e fornecimento de software para <strong>startups</strong>. Nossa missão é <strong>simplificar</strong> o caminho das startups rumo ao sucesso, oferecendo soluções de software <strong>personalizadas e eficazes</strong>.`, `Na Vision Soft Brasil, compreendemos as necessidades exclusivas das startups. Criando soluções de software ágeis e <strong>adaptadas</strong> à você!`, `Desenvolvemos <strong>aplicativos</strong>, <strong>sistemas web</strong> e <strong>softwares de gerenciamento</strong>. Nossa prioridade é fornecer produtos de alta qualidade que ajudem sua empresa a prosperar.`]}
+]

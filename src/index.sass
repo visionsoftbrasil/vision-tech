@@ -275,6 +275,8 @@ main
         
     
     &:nth-of-type(2)
+      height: auto
+      min-height: calc(100vh)
       background: $purple url(assets/images/bg/code.png) left 10% bottom 2rem no-repeat
       background-size: 60%
       padding: 1rem 0
@@ -293,38 +295,66 @@ main
           text-align: right
           font-size: 400%
           color: $white-gray
-          margin: 4rem 4rem 3rem
+          margin: 4rem 4rem 0rem
 
       .container-2
-        padding: 1rem
+        padding: .5rem
         display: flex
         width: 90%
         align-self: center
-        margin: 2rem 0
         gap: 6%
         height: 100%
         justify-content: space-around
+
         @media screen and (max-width: 480px) 
           min-width: 400px
           min-height: 225px
           flex-direction: column
 
-        .about-radius
-          border-radius: 1rem
-          width: 60%
-          height: 100%
-          background: #eeeeee8f
-          backdrop-filter: blur(5px)
-          @media screen and (max-width: 480px) 
-            width: 100%
+        .carousel
 
-        .img-shadow
-          width: 300px
-          height: 300px
-          align-self: center
-          background: $black-purple
-          box-shadow: 25px 25px 0px 8px $black-purple_01
-          
+          .card-carousel
+            display: flex
+            align-items: center
+            justify-content: space-around
+            height: 100%
+            padding: 1rem
+            flex-wrap: wrap
+
+          .about-radius
+            border-radius: 1rem
+            min-height: 50%
+            max-width: 65%
+            padding: 1rem
+            text-align: left
+            font-size: 1.5rem
+            align-content: center
+            box-shadow: 23px 23px 7px -7px $black-purple
+
+            .desc-cardrousel
+              width: 100%
+              height: 100%
+              display: flex
+              flex-direction: column
+              justify-content: center
+
+              p
+                margin: 1rem 0
+
+                strong
+                  color: #460858
+                  letter-spacing: .2rem
+
+            background: #eeeeee8f
+            backdrop-filter: blur(5px)
+            @media screen and (max-width: 480px) 
+              width: 100%
+
+          .img-shadow 
+            width: 30%
+            filter: drop-shadow(1rem 1rem 2px $black-purple)
+            img
+              border-radius: 1rem
           
 
 footer
@@ -366,11 +396,3 @@ footer
       margin-top: 20px
       font-size: 14px
 /* background-color: #242424; */
-
-.carousel
-  width: 100%
-  height: 100%
-
-.container-carousel
-  width: 100%
-  height: 100%

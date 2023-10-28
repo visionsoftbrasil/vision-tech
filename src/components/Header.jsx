@@ -43,9 +43,9 @@ export default function Header() {
                         </div>
                     </ul>
                 </nav>
-                <div onClick={() => setActive(!active)} class={active ? "icon-sand menu btn1 open" : "icon-sand menu btn1"} data-menu="1">
-                    <div class="icon-left"></div>
-                    <div class="icon-right"></div>
+                <div onClick={() => setActive(!active)} className={active ? "icon-sand menu btn1 open" : "icon-sand menu btn1"} data-menu="1">
+                    <div className="icon-left"></div>
+                    <div className="icon-right"></div>
                 </div>
             </div>
         </header>

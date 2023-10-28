@@ -1,5 +1,7 @@
 import logo from "../assets/images/logo/central-white-nobg-minimal.png"
 import { Carousel } from "react-responsive-carousel"
+import { imageDesc } from "../util/utils"
+import Cardrousel from "../components/Cardrousel"
 
 export default function Home() {
 
@@ -25,31 +27,11 @@ export default function Home() {
                         <h1> &lt;Sobre Nós&gt;</h1>
                     </div>
                     <div className="container-2">
-                        <div className="about-radius">
-
-                        </div>
-                        <div className="img-shadow">
-                            <Carousel className="carousel">
-                                <div className="container-carousel">
-                                    <p>teste 1</p>
-                                </div>
-                                <div className="container-carousel">
-                                    <p>teste 2</p>
-                                </div>
-                                <div className="container-carousel">
-                                    <p>teste 3</p>
-                                </div>
-                                <div className="container-carousel">
-                                    <p>teste 1</p>
-                                </div>
-                                <div className="container-carousel">
-                                    <p>teste 2</p>
-                                </div>
-                                <div className="container-carousel">
-                                    <p>teste 3</p>
-                                </div>
-                            </Carousel>
-                        </div>
+                        <Carousel showThumbs={false} className="carousel">
+                            {imageDesc?.map((card, index) => (
+                                <Cardrousel key={index} card={imageDesc.indexOf(card)} />
+                            ))}
+                        </Carousel>
                     </div>
                 </div>
             </section>
