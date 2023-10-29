@@ -27,7 +27,15 @@ export default function Home() {
                         <h1> &lt;Sobre Nós&gt;</h1>
                     </div>
                     <div className="container-2">
-                        <Carousel showThumbs={false} className="carousel">
+                        <Carousel 
+                            autoPlay={true} 
+                            interval={4000} 
+                            infiniteLoop={true} 
+                            showThumbs={false} 
+                            swipeable={false}
+
+                            className="carousel"
+                        >
                             {imageDesc?.map((card, index) => (
                                 <Cardrousel key={index} card={index} />
                             ))}
