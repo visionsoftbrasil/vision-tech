@@ -8,10 +8,22 @@ import us2 from "../assets/us2.jpg"
 import us3 from "../assets/us3.jpg"
 
 export const imageDesc = [
-    {img: geo, desc: ['<strong>Geovane "Geodain" Silva</strong>','Diretor de <strong>UX/UI</strong>', 'Apaixonado por <strong>design</strong> centrado no usuário, Geovane lidera nossa equipe de UX/UI, garantindo que nossos produtos sejam <strong>atraentes</strong> e <strong>fáceis</strong> de usar. Sua criatividade e conhecimento em experiência do usuário moldam a identidade visual de nossos projetos, tornando-os verdadeiramente <strong>excepcionais</strong>.']},
-    {img: helo, desc: ['<strong>Heloisa "Helo" Martins</strong>', 'Gerente de <strong>Vendas</strong>' ,'Heloisa é nossa especialista em vendas, dedicada a impulsionar o sucesso de nossos clientes, proporcionando soluções <strong>sob medida</strong> para suas necessidades. Com sua abordagem personalizada e orientada para o cliente, ela constrói relacionamentos sólidos e ajuda as empresas a alcançarem seus <strong>objetivos</strong> de <strong>crescimento</strong>.']},
-    {img: lu, desc: ['<strong>Lucas "Risalto" Campos</strong>', 'Diretor de <strong>Marketing</strong>','Lucas é nosso estrategista de marketing, liderando iniciativas para promover nossa marca e alcançar um público mais amplo. Sua paixão pela <strong>criatividade</strong> e análise de dados impulsiona nossas campanhas de marketing, aumentando nossa <strong>visibilidade</strong> e alcance no mercado.']},
-    {img: jao, desc: ['<strong>João "Jão" Marcelino</strong>','Diretor <strong>Administrativo</strong>','João gerencia nossas operações internas com <strong>eficiência</strong> garantindo que a <strong>Vision Soft Brasil</strong> funcione perfeitamente todos os dias. Sua habilidade em <strong>organizar</strong> processos e otimizar recursos é <strong>fundamental</strong> para manter nossa empresa funcionando de maneira eficaz.']},
+    {img: geo, desc: [
+        '<strong>Geovane "Geodain" Silva</strong>',
+        'Diretor de <strong>UX/UI</strong>', 'Apaixonado por <strong>design</strong> centrado no usuário, Geovane lidera nossa equipe de UX/UI, garantindo que nossos produtos sejam <strong>atraentes</strong> e <strong>fáceis</strong> de usar. Sua criatividade e conhecimento em experiência do usuário moldam a identidade visual de nossos projetos, tornando-os verdadeiramente <strong>excepcionais</strong>.'
+    ]},
+    {img: helo, desc: [
+        '<strong>Heloisa "Helo" Martins</strong>', 
+        'Gerente de <strong>Vendas</strong>' ,'Heloisa é nossa especialista em vendas, dedicada a impulsionar o sucesso de nossos clientes, proporcionando soluções <strong>sob medida</strong> para suas necessidades. Com sua abordagem personalizada e orientada para o cliente, ela constrói relacionamentos sólidos e ajuda as empresas a alcançarem seus <strong>objetivos</strong> de <strong>crescimento</strong>.'
+    ]},
+    {img: lu, desc: [
+        '<strong>Lucas "Risalto" Campos</strong>', 
+        'Diretor de <strong>Marketing</strong>','Lucas é nosso estrategista de marketing, liderando iniciativas para promover nossa marca e alcançar um público mais amplo. Sua paixão pela <strong>criatividade</strong> e análise de dados impulsiona nossas campanhas de marketing, aumentando nossa <strong>visibilidade</strong> e alcance no mercado.'
+    ]},
+    {img: jao, desc: [
+        '<strong>João "Jão" Marcelino</strong>','Diretor <strong>Administrativo</strong>',
+        'João gerencia nossas operações internas com <strong>eficiência</strong> garantindo que a <strong>Vision Soft Brasil</strong> funcione perfeitamente todos os dias. Sua habilidade em <strong>organizar</strong> processos e otimizar recursos é <strong>fundamental</strong> para manter nossa empresa funcionando de maneira eficaz.'
+    ]},
     {img: molari, desc: [
         '<strong>Guilherme "Molari" Oliveira<strong/>', 
         'Diretor de <strong>Produção</strong> e <strong>Dev Sênior</strong>','Guilherme é nosso especialista em <strong>desenvolvimento</strong>, liderando nossa equipe de produção para criar produtos de <strong>alta qualidade</strong>. Com sua vasta experiência, ele orienta nossa equipe no desenvolvimento de soluções tecnológicas <strong>inovadoras</strong> e <strong>confiáveis</strong>.'
