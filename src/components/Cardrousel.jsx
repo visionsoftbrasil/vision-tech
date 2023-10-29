@@ -12,7 +12,6 @@ export default function Cardrousel({card}){
             <div className="card-carousel">
                 <div className="about-radius">
                     <div className="desc-cardrousel">
-                        {/* <p dangerouslySetInnerHTML={renderHtml()} /> */}
                         {
                             imageDesc[card].desc.map((desc, index) => (
                                 <p key={index} dangerouslySetInnerHTML={renderHtml(desc)} />
@@ -24,10 +23,6 @@ export default function Cardrousel({card}){
                     {
                         card < imageDesc.length && <img src={imageDesc[card].img} alt="Imagem" />
                     }
-                    {
-                        
-                    }
-                    
                 </div>
             </div>
         </>
