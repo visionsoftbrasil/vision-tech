@@ -136,7 +136,7 @@ html
 
 
 .header
-  background-color: transparent
+  background-color: #00000024
   font-size: 28px
   position: fixed
   z-index: 1
@@ -282,14 +282,13 @@ main
     
     &:nth-of-type(2)
       min-height: 100vh
-      height: 100vh
-      background: $purple url(assets/images/bg/code.png) left 10% bottom 2rem no-repeat
-      background-size: 60%
+      background: $purple url(assets/images/bg/code.png) center 2rem repeat
+      background-size: 100%
       padding: 1rem 0
       max-width: 100vw
+      height: auto
       @media screen and (max-width: 480px)
         background: $purple url(assets/images/bg/code.png) left 10% bottom 2rem no-repeat
-        height: auto
         padding: 0
 
       .container
@@ -324,77 +323,50 @@ main
         align-items: center
         justify-content: center
         padding: 1rem
-        min-width: 60%
-        max-width: 90%
         height: 100%
+        width: 80%
+        max-width: 1300px
 
-        @media screen and (max-width: 480px) 
-          width: 100%
-          max-width: 100%
-          padding: 0
+        .container-sobre
+          display: flex
+          flex-direction: column
+          gap: 2rem
+          justify-content: space-between
 
-        .carousel
-          box-shadow: 23px 23px 7px -7px $black-purple
-          border-radius: 1rem
-          @media screen and (max-width: 480px) 
-            box-shadow: 0 0 0 0
-            border-radius: 0
-
-          .card-carousel
+          .card-sobre
             display: flex
-            align-items: center
-            justify-content: space-around
-            height: 100%
-            border-radius: 1rem
+            width: 100%
+            height: auto
+            border: 1px solid #ffffff7e
+            border-radius: 1rem 0rem 0rem 1rem
 
             .about-radius
-              width: 78%
-              padding: 1rem 2rem
-              height: 100%
-              text-align: left
-              font-size: 1.5rem
-              align-content: center
-              background: #ffffff67
-              backdrop-filter: blur(5px)
+              padding: 1rem
+              font-size: 1.2rem
+              backdrop-filter: blur(10px)
+              background: #ffffff5c
+              color: white
+              border-radius: 1rem 0rem 0rem 1rem
 
-              .desc-cardrousel
-                width: 100%
-                height: 100%
-                display: flex
-                flex-direction: column
-                justify-content: center
-                p
-                  margin: 1rem 0
-
-                  strong
-                    color: #460858
-                    letter-spacing: .2rem
-
-            .img-shadow 
-              width: 22%    
-
-            @media screen and (max-width: 480px) 
-              // display: none
-              flex-direction: column-reverse
-              gap: 0
-              border-radius: 0
-              // height: auto
+              strong
+                color: #5a188f
+              
+              p
+                padding: .5rem
+              
+            &:nth-of-type(2n)
+              flex-direction: row-reverse
+              border-radius: 0rem 1rem 1rem 0rem
 
               .about-radius
-                width: 100%
-                height: 100%
-                padding: .5rem 1rem
+                border-radius: 0rem 1rem 1rem 0rem
+          .img-shadow
+            width: 100%
+            img
+              width: 100%
+              max-width: 500px
 
-                .desc-cardrousel
-                  p
-                    margin: .5rem 0
-                    font-size: 80%
-
-                    strong
-                      letter-spacing: normal
-
-              .img-shadow
-                width: 100%
+        
                    
 
 footer

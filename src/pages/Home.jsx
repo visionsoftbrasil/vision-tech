@@ -1,7 +1,6 @@
 import logo from "../assets/images/logo/central-white-nobg-minimal.png"
-import { Carousel } from "react-responsive-carousel"
 import { imageDesc } from "../util/utils"
-import Cardrousel from "../components/Cardrousel"
+import CardSobre from "../components/CardSobre"
 
 export default function Home() {
 
@@ -27,19 +26,11 @@ export default function Home() {
                         <h1> &lt;Sobre Nós&gt;</h1>
                     </div>
                     <div className="container-2">
-                        <Carousel 
-                            autoPlay={true} 
-                            interval={4000} 
-                            infiniteLoop={true} 
-                            showThumbs={false} 
-                            swipeable={false}
-
-                            className="carousel"
-                        >
+                        <div className="container-sobre">
                             {imageDesc?.map((card, index) => (
-                                <Cardrousel key={index} card={index} />
+                                <CardSobre key={index} card={index} />
                             ))}
-                        </Carousel>
+                        </div>
                     </div>
                 </div>
             </section>
