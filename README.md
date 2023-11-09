@@ -14,10 +14,9 @@ Bem-vindo ao repositório oficial da página web da Vision Tech Software, constr
 
 **Tecnologias Utilizadas:**
 
-- React
 - JavaScript
 - HTML5
-- SASS
+- CSS
 
 **Como Contribuir:**
 
