@@ -215,7 +215,7 @@ section:nth-of-type(2) {
     background-size: 100%;
 }
 
-.sobre-titulo {
+.sobre-titulo, .servico-titulo {
     display: flex;
     width: 100%;
     min-height: 50%;
@@ -223,7 +223,7 @@ section:nth-of-type(2) {
     padding: 0 3rem
 }
 
-.sobre-titulo h1{
+.sobre-titulo h1, .servico-titulo h1{
     font-size: 300%;
     color: var(--white-gray);
     letter-spacing: .3rem;
@@ -283,6 +283,16 @@ section:nth-of-type(2) {
 
 .sobre strong {
     color: rgb(250, 167, 250)
+}
+
+/* TERCEIRA SECTION */
+.servico-titulo {
+    justify-content: flex-start;
+}
+
+.container-slides {
+
+    
 }
 
 @media screen and (max-width: 480px) {
