@@ -1,4 +1,4 @@
-document.addEventListener('onload', main())
+window.addEventListener('onload', main())
 
 function main(){
     const header = document.querySelector('header')
@@ -6,67 +6,51 @@ function main(){
     const heightHeader = header.offsetHeight
     const menu = document.getElementById('menu')
     const links = document.getElementsByClassName('links')[0]
+    const imgSlide = document.getElementById('imgSlide')
 
-    let values = []
     let menuOpen = false
 
     let dist = []
     let counter = 0
 
-    // let auto = true
+    let auto = true
 
-    // const interval = setInterval(() => {
-    // if (auto) nextSlide() 
-    // else return
-    // }, 3000)
+    const interval = setInterval(() => {
+    if (auto) nextSlide() 
+    else return
+    }, 3000)
 
+    for(let i = 0; i < slides.children.length; i++){
+        dist.push((imgSlide[0].offsetWidth+64)*i)
+    }
 
-    // window.addEventListener('load', () => {
-    //     for(let i in li){
-    //         if (typeof li[i] == 'object')
-    //         li[i].addEventListener('click', handleMenu)
-    //     }
+    next.addEventListener('click', () => {
+        nextSlide()
+        auto = false
+        setTimeout(() => {
+            if (auto) {
+                return
+            }else auto = true
+        }, 5000)
+    })
 
-    //     for(let i in card){
-    //         if (typeof card[i] == 'object') {
-    //             card[i].addEventListener('click', handleCard)
-    //             card[i].id = i
-    //             values.push(false)
-    //         }
-    //     }
-
-    //     for(let i = 0; i < slides.children.length; i++){
-    //         dist.push((imgEvent[0].offsetWidth+64)*i)
-    //     }
-    // })
-
-    // next.addEventListener('click', () => {
-    //     nextSlide()
-    //     auto = false
-    //     setTimeout(() => {
-    //         if (auto) {
-    //             return
-    //         }else auto = true
-    //     }, 5000)
-    // })
-
-    // prev.addEventListener('click', () => {
-    //     prevSlide()
-    //     auto = false
-    //     setTimeout(() => {
-    //         if (auto) {
-    //             return
-    //         }else auto = true
-    //     }, 5000)
-    // })
+    prev.addEventListener('click', () => {
+        prevSlide()
+        auto = false
+        setTimeout(() => {
+            if (auto) {
+                return
+            }else auto = true
+        }, 5000)
+    })
 
     function handleMenu() {
-    if (!menuOpen) {
-        links.classList.add('more-height')     
-    }else {
-        links.classList.remove('more-height')
-    }
-    menuOpen = !menuOpen
+        if (!menuOpen) {
+            links.classList.add('more-height')     
+        }else {
+            links.classList.remove('more-height')
+        }
+        menuOpen = !menuOpen
     }
 
     menu.addEventListener('click', handleMenu)

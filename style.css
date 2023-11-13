@@ -311,6 +311,21 @@ section:nth-of-type(2) {
     border: 2px solid rgba(255, 255, 255, 0.411);
 }
 
+.prev-div, .next-div {
+    position: relative;
+}
+
+.prev, .prev::after {
+    position: absolute;
+    height: 4px;
+    background: white;
+    width: 10px
+}
+
+.prev::after {
+
+}
+
 .container-slides{
     display: flex;
     padding: 1rem 0;
