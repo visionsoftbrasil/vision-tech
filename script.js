@@ -15,6 +15,15 @@ function main(){
 
     let auto = true
 
+    menu.addEventListener('click', handleMenu)
+
+    for (let i in espacoHeader){
+        
+        if (typeof espacoHeader[i] == "object"){
+            espacoHeader[i].style.height = `${heightHeader*2}px`
+        }
+    }
+
     const interval = setInterval(() => {
     if (auto) nextSlide() 
     else return
@@ -51,15 +60,6 @@ function main(){
             links.classList.remove('more-height')
         }
         menuOpen = !menuOpen
-    }
-
-    menu.addEventListener('click', handleMenu)
-
-    for (let i in espacoHeader){
-        
-        if (typeof espacoHeader[i] == "object"){
-            espacoHeader[i].style.height = `${heightHeader*2}px`
-        }
     }
 }
 
