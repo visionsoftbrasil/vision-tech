@@ -24,6 +24,7 @@
     --white-gray: #eeeeee;
     --black: #272727;
     --dark: #2727279c;
+    --img: calc(70vh);
 }
 
 ::-webkit-scrollbar{
@@ -304,46 +305,67 @@ section:nth-of-type(2) {
 }
 
 .carousel {
-    max-width: calc(500px + 2rem);
+    position: relative;
+    max-width: calc(var(--img) + 2rem);
     margin: 0 auto;
     overflow-x: hidden;
     background: rgba(225, 0, 255, 0.096);
     border: 2px solid rgba(255, 255, 255, 0.411);
 }
 
-.container-slides{
-    display: flex;
-    padding: 1rem 0;
-    position: relative;
-    /* transform: translateX(calc( -500px - 2rem)); */
-}
-
 .prev-div, .next-div {
+    transition: .2s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     align-self: center;
+    height: 100%;
     padding: .5rem;
+    z-index: 1;
+}
+
+.prev-div:hover, .next-div:hover {
+    background: #8822db2d;
 }
 
 .next-div {
     right: 0;
-
 }
 
 .prev, .prev::after, .next, .next::after {
     height: 4px;
     background: white;
+    border: none;
     width: 15px;
+    transform-origin: center;
 }
 
-.prev {
-    transform: rotate(-45deg);
+.prev, .next {
+    background: var(--purple);
+    transform: rotate(40deg);
 }
 
 .prev::after, .next::after {
     position: absolute;
-    margin-top: -5px;
     content: '';
-    transform: rotate(45deg);
+    transform: rotate(90deg);
+}
+
+.prev::after {
+    margin: -6px;
+}
+
+.next::after {
+    margin: 6px;
+}
+
+
+.container-slides{
+    transition: .5s;
+    display: flex;
+    padding: 1rem 0;
 }
 
 .slide {
@@ -354,11 +376,12 @@ section:nth-of-type(2) {
 .servico {
     padding: 0 1rem;
     display: flex;
-    width: 100%
+    width: 100%;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.411);
 }
 
 .servico img { 
-    max-width: 500px;
+    width: var(--img);
 }
 
 .descricao-servico {
@@ -366,7 +389,7 @@ section:nth-of-type(2) {
     flex-direction: column;
     color: white;
     gap: 1rem;
-    padding: 0 2rem;
+    padding: 1rem;
 }
 
 .descricao-servico p:nth-of-type(1){
