@@ -28,9 +28,9 @@ function main(){
         }
     }
 
-    const interval = setInterval(() => {
-    if (auto) nextSlide() 
-    else return
+    setInterval(() => {
+        if (auto) nextSlide() 
+        else return
     }, 5000)
 
     for(let i = 0; i < slides.length; i++){
